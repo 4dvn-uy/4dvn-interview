@@ -1,0 +1,17 @@
+.page-home {
+  max-width: 1000px;
+  margin: 5% auto;
+
+  .row-col3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: calc(50% - 10px);
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
+  }
+}

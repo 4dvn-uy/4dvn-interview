@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "@fourdigit/stylelint-config-fourdigit",
+    "stylelint-prettier/recommended",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": ["stylelint-prettier", "stylelint-color-format"],
+  "rules": {
+    "prettier/prettier": true,
+    "order/properties-alphabetical-order": null,
+    "declaration-empty-line-before": null,
+    "comment-empty-line-before": [
+      "never",
+      {
+        "ignore": ["after-comment", "stylelint-commands"]
+      }
+    ],
+    "function-name-case": null
+  }
+}

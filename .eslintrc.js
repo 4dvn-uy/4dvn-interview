@@ -1,0 +1,67 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { resolve } = require('path');
+
+module.exports = {
+  root: true,
+  plugins: ['@typescript-eslint', 'react-hooks'],
+  extends: ['@fourdigit/eslint-config-fourdigit/.eslintrc', 'plugin:@typescript-eslint/recommended'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: resolve(__dirname, './tsconfig.json'),
+    createDefaultProgram: true,
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  rules: {
+    indent: 0,
+    'no-extra-boolean-cast': 0,
+    'no-magic-numbers': 0,
+    'no-undef': 0,
+    'no-unneeded-ternary': 2,
+    'no-use-before-define': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react/display-name': 0,
+    'react/jsx-boolean-value': 2,
+    'react/jsx-closing-bracket-location': 2,
+    'react/jsx-closing-tag-location': 2,
+    'react/jsx-curly-spacing': 2,
+    'react/jsx-no-bind': 2,
+    'react/jsx-pascal-case': 2,
+    'react/jsx-tag-spacing': 2,
+    'react/jsx-wrap-multilines': 2,
+    'react/no-array-index-key': 0,
+    'react/no-string-refs': 2,
+    'react/no-unescaped-entities': 0,
+    'react/prop-types': 0,
+    'react/require-render-return': 2,
+    'react/self-closing-comp': 2,
+    'prettier/prettier': ['error', { singleQuote: true }],
+    'react/sort-comp': [
+      'error',
+      {
+        order: [
+          'static-methods',
+          'instance-variables',
+          'lifecycle',
+          'render',
+          '/^render.+$/',
+          '/^on.+$/',
+          'everything-else',
+        ],
+      },
+    ],
+    '@typescript-eslint/camelcase': 0,
+    '@typescript-eslint/class-name-casing': 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/explicit-member-accessibility': 0,
+    '@typescript-eslint/indent': 0,
+    '@typescript-eslint/interface-name-prefix': 0,
+    '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-use-before-define': ['error'],
+  },
+};

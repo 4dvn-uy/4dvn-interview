@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint"
+  ],
+  "unwantedRecommendations": [
+    "hex-ci.stylelint-plus"
+  ]
+}
