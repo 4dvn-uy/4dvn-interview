@@ -4,9 +4,10 @@ import './index.scss';
 import img_001 from '../../assets/images/001.png';
 
 const Home: React.FC = () => {
+  document.title = '4DVN Interview';
   return (
     <div className="page-home">
-      <h1>Interview</h1>
+      <h1>{document.title}</h1>
       <section>
         <h2>Loading Component</h2>
         <div className="row-col3">
@@ -20,21 +21,24 @@ const Home: React.FC = () => {
             <p>Lưu ý: thẻ box đã có "position: relative" sẵn.</p>
             <img src={img_001} alt="example image" />
           </Box>
+
           <Box>
             <Loading />
             <p>Lorem ipsum dolor sit amet.</p>
           </Box>
+
           <Box>
             <Loading />
             <p>Lorem ipsum dolor sit amet consectetur.</p>
           </Box>
+
           <Box color="green">
             {/* <TextField hovaten="Tên của bạn" /> */}
             <h3>2/ Textfield component là 1 input</h3>
             <p>
               và có thêm 1 thuộc tính là <strong>"hovaten"</strong> giá trị là tên của bạn
             </p>
-            <Code language="html">
+            <Code language="tsx">
               {`<!-- INPUT -->
 <TextField hovaten="Tên của bạn" />
 
