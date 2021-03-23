@@ -4,7 +4,7 @@ import './index.scss';
 import img_001 from '../../assets/images/001.png';
 
 const Home: React.FC = () => {
-  document.title = '4DVN Interview';
+  document.title = '4DVN Interview | Section 1';
   return (
     <div className="page-home">
       <h1>{document.title}</h1>
